@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting" ) 
     end
   end
+
+  def copyright_generator
+    PopeViewTool::Renderer.copyright "Adam Pope", "All rights reserved"
+  end 
 end
