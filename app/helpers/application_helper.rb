@@ -16,6 +16,7 @@ module ApplicationHelper
     end
   end
 
+  # This works with the custom gem I created 
   def copyright_generator
     PopeViewTool::Renderer.copyright "Adam Pope", "All rights reserved"
   end 

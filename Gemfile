@@ -60,7 +60,7 @@ gem 'devise', '~> 4.2'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 
-gem 'pope_view_tool', git: 'https://github.com/Adam1pope/pope_view_tool' 
+gem 'pope_view_tool', '~> 0.1.0'
 
 
 
