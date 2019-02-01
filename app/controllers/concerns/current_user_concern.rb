@@ -1,18 +1,18 @@
 module CurrentUserConcern
   extend ActiveSupport::Concern
 
-  #Implementing null object pattern. 
-  #super comes from devise class. OpenStruct is from the Openstruct class
   def current_user
     super || guest_user
   end 
 
+  # created guest user from GuestUser class which inherited from User class. 
   def guest_user
-    OpenStruct.new(name: "Guest", 
-                   first_name: "Guest", 
-                   last_name: "User", 
-                   email:"guest@example.com"
-                   )
+    guest = GuestUser.new
+    guest.name = "Guest User"
+    guest.first_name = "Guest"
+    guest.last_name = "User"
+    guest.email = "guest@example.com"
+    guest 
   end 
 end 
 
