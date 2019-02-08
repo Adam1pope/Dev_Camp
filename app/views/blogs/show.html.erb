@@ -9,7 +9,11 @@
 
   <%= render 'comments/comment_form' %>   
   
-  <!-- rails looks for a partial _comment.html.erb-->
-  <%= render @blog.comments %> 
+  <!-- id and data-blog-id comes from blogs.coffee in channel -->
+  <div id="comments" data-blog-id = "<%= @blog.id %>">
+      <!-- rails looks for a partial _comment.html.erb-->
+      <%= render @blog.comments %> 
+  </div>
+
 </div>
 
