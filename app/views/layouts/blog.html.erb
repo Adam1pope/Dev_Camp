@@ -7,7 +7,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <meta name="keywords" content= "<%= @seo_keywords %>" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oxygen" rel="stylesheet">
+
+    <meta name="keywords" content= "<%= @seo_keywords %>">
+
+    <%= favicon_link_tag 'favicons/other_favicon.ico' %>
 
     <!-- looks for stylesheet called blogs -->
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -33,7 +37,7 @@
 
         <%= alerts %>
 
-          <%= source_helper("blog") %>
+        
     </div>
   </body>
 </html>
