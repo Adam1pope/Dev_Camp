@@ -7,14 +7,58 @@
         <hr>
 
       <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-6">
             <%= image_tag "profile.png", width: 350, alt: "profile image", class: 'profile-img' %>
           </div>
 
-        <div class="col-md-7">
+        <div class="col-md-6">
           <p>dkfjsdlkfjlksadjfklsdfjflakfjlkdfjsdklfjfjasklfjdsklfjklfjkl</p>
 
           <p>dkfjsdlkfjlksadjfklsdfjflakfjlkdfjsdklfjfjasklfjdsklfjklfjkl</p>
+
+          <p>
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-toggle="collapse"
+              data-target="#jobHistory"
+              aria-expanded="false"
+              aria-controls="jobHistory"
+            >
+              Job History
+            </button>
+
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-toggle="collapse"
+              data-target="#education"
+              aria-expanded="false"
+              aria-controls="education"
+            >
+              Education 
+            </button>
+
+            <p>
+              <div class="collapse" id="jobHistory">
+                <div class="card card-body">
+                  Job 1
+                </div>
+                <div class="card card-body">
+                  Job 2
+                </div>
+              </div>
+
+              <div class="collapse" id="education">
+                <div class="card card-body">
+                  School 1
+                </div>
+                <div class="card card-body">
+                  School 2
+                </div>
+              </div>
+            </p>
+          </p>
       </div>
     </div>
   </div>
